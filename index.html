@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brain Map</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, sans-serif; background: #09090f; color: #ccc; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.container { text-align: center; padding: 40px; }
+h1 { font-size: 28px; color: #7aafff; font-weight: 200; letter-spacing: 4px; margin-bottom: 8px; }
+p { font-size: 12px; color: #2a2a40; letter-spacing: 2px; margin-bottom: 60px; }
+.links { display: flex; flex-direction: column; gap: 16px; align-items: center; }
+a { display: block; padding: 18px 48px; border-radius: 8px; text-decoration: none; font-size: 15px; transition: background 0.2s; }
+.link-map { background: #141432; border: 1px solid #2a2a4a; color: #8bf; }
+.link-map:hover { background: #1e1e44; }
+.link-report { background: #0e0e1c; border: 1px solid #1a1a2e; color: #7aafff; }
+.link-report:hover { background: #14142a; }
+.link-ceo { background: #1a1a2e; border: 1px solid #2a2a4a; color: #b0bce0; }
+.link-ceo:hover { background: #222240; }
+.desc { font-size: 12px; color: #334; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>BRAIN MAP</h1>
+  <p>Kindle Highlights · 12 Years · 118 Books</p>
+  <div class="links">
+    <div>
+      <a href="brain_map.html" class="link-map">脳のマップ</a>
+      <div class="desc">Concept network · Force-directed graph</div>
+    </div>
+    <div>
+      <a href="brain_report.html" class="link-report">読書の軌跡レポート</a>
+      <div class="desc">12年間の年別分析</div>
+    </div>
+    <div>
+      <a href="ceo_report.html" class="link-ceo">社長の価値観レポート</a>
+      <div class="desc">For Team Members</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
