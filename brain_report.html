@@ -8,87 +8,100 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, serif;
-  background: #09090f; color: #ccc; line-height: 1.9;
+  background: #f7f6f2; color: #2a2a2a; line-height: 1.9;
 }
-.container { max-width: 780px; margin: 0 auto; padding: 72px 28px 140px; }
-h1 {
-  font-size: 26px; color: #7aafff; font-weight: 200;
-  letter-spacing: 5px; margin-bottom: 6px;
+.header {
+  background: #1a1a2e; color: #fff; padding: 56px 40px 48px;
+  text-align: center;
 }
-.subtitle { font-size: 12px; color: #2a2a40; margin-bottom: 80px; letter-spacing: 3px; }
+.header-label {
+  font-size: 11px; letter-spacing: 5px; color: #9090c0;
+  text-transform: uppercase; margin-bottom: 14px;
+}
+.header h1 {
+  font-size: 28px; font-weight: 300; letter-spacing: 5px;
+  color: #e0e8ff; margin-bottom: 10px;
+}
+.header p {
+  font-size: 12px; color: #8888b8; letter-spacing: 3px;
+}
+.container { max-width: 780px; margin: 0 auto; padding: 56px 28px 140px; }
 .divider {
-  font-size: 10px; letter-spacing: 5px; color: #1e1e30; text-transform: uppercase;
-  margin-bottom: 36px; padding-bottom: 14px; border-bottom: 1px solid #111120;
+  font-size: 10px; letter-spacing: 5px; color: #aaa; text-transform: uppercase;
+  margin-bottom: 36px; padding-bottom: 14px; border-bottom: 1px solid #e0ddd6;
 }
 /* 総合分析 */
 .synthesis-block {
-  background: #0c0c1c; border-left: 2px solid #5a9aff;
-  padding: 36px 40px; margin-bottom: 88px; border-radius: 0 6px 6px 0;
+  background: #fff; border-left: 3px solid #4a6fa5;
+  padding: 36px 40px; margin-bottom: 88px; border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06); border-top: 1px solid #ede8e0;
+  border-right: 1px solid #ede8e0; border-bottom: 1px solid #ede8e0;
 }
 .synthesis-block p {
-  color: #bbc; font-size: 15.5px; line-height: 2; margin-bottom: 20px;
+  color: #3a3a3a; font-size: 15.5px; line-height: 2; margin-bottom: 20px;
 }
 .synthesis-block p:last-child { margin-bottom: 0; }
 /* 年別 */
 .year-block {
-  margin-bottom: 64px; padding-bottom: 64px; border-bottom: 1px solid #0e0e18;
+  background: #fff; border-radius: 12px; padding: 36px 40px;
+  margin-bottom: 20px; box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  border: 1px solid #ede8e0;
 }
-.year-block:last-child { border-bottom: none; margin-bottom: 0; }
+.year-block--phys-only { opacity: 0.8; }
 .year-header {
   display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px;
 }
 .year-num {
-  font-size: 48px; color: #4a6fa5; font-weight: 800;
+  font-size: 48px; color: #1a1a2e; font-weight: 800;
   font-variant-numeric: tabular-nums; line-height: 1;
 }
-.year-meta { font-size: 12px; color: #7878a0; }
+.year-meta { font-size: 12px; color: #888; }
 .books-row {
-  display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 26px;
+  display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px;
 }
 .book-tag {
   font-size: 11px; font-family: -apple-system, sans-serif;
-  background: #0e0e1c; color: #6060a0; padding: 4px 9px;
-  border-radius: 3px; border: 1px solid #2a2a4a;
+  background: #f0eee8; color: #555; padding: 4px 9px;
+  border-radius: 3px; border: 1px solid #ddd8ce;
 }
 .phys-label {
-  font-size: 11px; color: #7a6a40; margin: 10px 0 5px;
+  font-size: 11px; color: #997755; margin: 10px 0 5px;
   font-family: -apple-system, sans-serif;
 }
 .phys-tag {
   font-size: 11px; font-family: -apple-system, sans-serif;
-  background: #100e04; color: #7a6a30; padding: 4px 9px;
-  border-radius: 3px; border: 1px solid #3a3010;
-}
-.year-block--phys-only {
-  opacity: 0.75;
+  background: #faf5ec; color: #886644; padding: 4px 9px;
+  border-radius: 3px; border: 1px solid #e8dcc8;
 }
 .analysis p {
-  color: #a8a8be; font-size: 15px; line-height: 2; margin-bottom: 20px;
+  color: #3a3a3a; font-size: 15px; line-height: 2; margin-bottom: 20px;
 }
 .analysis p:last-child { margin-bottom: 0; }
-.analysis strong { color: #c8c8e0; font-weight: 700; }
+.analysis strong { color: #1a1a1a; font-weight: 700; }
 .analysis h3, .analysis h4 {
-  font-size: 14px; color: #7aafff; font-weight: 600;
+  font-size: 14px; color: #4a6fa5; font-weight: 700;
   margin: 24px 0 10px; font-family: -apple-system, sans-serif;
 }
 .analysis ul { margin: 4px 0 20px 20px; }
 .analysis li {
-  color: #a8a8be; font-size: 15px; line-height: 1.9; margin-bottom: 8px;
+  color: #3a3a3a; font-size: 15px; line-height: 1.9; margin-bottom: 8px;
 }
-.synthesis-block strong { color: #c8d8ff; font-weight: 700; }
+.synthesis-block strong { color: #1a1a1a; font-weight: 700; }
 .synthesis-block h3, .synthesis-block h4 {
-  font-size: 14px; color: #7aafff; font-weight: 600;
+  font-size: 14px; color: #4a6fa5; font-weight: 700;
   margin: 24px 0 10px; font-family: -apple-system, sans-serif;
 }
 .synthesis-block ul { margin: 4px 0 20px 20px; }
-.synthesis-block li { color: #bbc; font-size: 15.5px; line-height: 2; margin-bottom: 8px; }
+.synthesis-block li { color: #3a3a3a; font-size: 15.5px; line-height: 2; margin-bottom: 8px; }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="header">
+  <div class="header-label">Reading Journey</div>
   <h1>BOMBER'S BRAIN REPORT</h1>
-  <p class="subtitle">読書の軌跡から見えてくるもの</p>
-
+  <p>読書の軌跡から見えてくるもの</p>
+</div>
+<div class="container">
   <div class="divider">通底するテーマ</div>
   <div class="synthesis-block"><p>この人のことを18年間見続けてきて、私が気づくのは、この人がずっと「<strong>本当のことを知りたい</strong>」という一つの切実な願いを抱き続けてきたということです。</p>
 <p>2009年から一貫して、この人は表面的な説明や「みんなが言ってること」を信用していない。「世界が変わる」「効率化」「リーダーシップ」「コミュニケーション」——そういった言葉の向こうにある、本当の仕組みや法則を掴みたがっている。それは知的好奇心というより、もっと実存的な、<strong>「騙されたくない」「本質を見抜きたい」</strong>という自己防衛に近い感情だったのではないでしょうか。</p>
